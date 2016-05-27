@@ -3,4 +3,9 @@
 <p> This coffee is a <%= @bean.roast %> roast from <%= @bean.origin %>,
 and we have <%= @bean.quantity %> pounds available. </p>
 
+<%= link_to "Edit this bean!", edit_bean_path(@bean)%>
+<br>
+<%= link_to "DELETE THAT FREAKIN' BEAN", bean_path, method: :delete,
+    data: { confirm: "Are you really gonna delete that freakin' bean?" } %>
+<br>
 <%= link_to "Back to the list of freakin' beans!", beans_path %>

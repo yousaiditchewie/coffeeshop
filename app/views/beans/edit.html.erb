@@ -1,0 +1,9 @@
+<h1>Edit that freakin' bean!</h1>
+
+<%= render 'form' %>
+
+<%= link_to "DELETE THAT FREAKIN' BEAN", bean_path, method: :delete,
+    data: { confirm: "Are you really gonna delete that freakin' bean?" } %>
+
+<br>
+<%= link_to "back to the list!", beans_path %>
